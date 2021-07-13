@@ -7,7 +7,6 @@ public class Plane extends Vehicle{
 
     List<Tire> tires;
     boolean isLanding;
-    int tireCount = 0;
 
     public Plane(Engine engine) {
         super(engine, "Plane", true, false, true, false);
@@ -31,17 +30,15 @@ public class Plane extends Vehicle{
     }
     public void addTire(){
         tires.add(new Tire(25, 35));
-        tireCount++;
     }
     public void removeTire(int tireIndex){
         tires.remove(tireIndex);
-        tireCount--;
     }
     public void replaceTire(int tireIndex){
         removeTire(tireIndex);
         addTire();
     }
     public String toString(){
-        return "Engine: " + engine.type + " Type: " + type + " isLand?: " + isLand + " isWater?: " + isWater + " isAir?: " + isAir + " isSpace?: " + isSpace + " passengers: " + passengers + " tires: " + tireCount + " isLanding?: " + isLanding;
+        return "Engine: " + engine.type + " Type: " + type + " isLand?: " + isLand + " isWater?: " + isWater + " isAir?: " + isAir + " isSpace?: " + isSpace + " Passengers: " + passengers + " Tires: " + tires.size() + " isLanding?: " + isLanding;
     }
 }

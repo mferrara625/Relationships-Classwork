@@ -16,4 +16,7 @@ public class Engine {
     public void turnOff(){
         Engine.this.isOn = false;
     }
+    public void addFuel(int fuelAmt){
+        Engine.this.fuel += fuelAmt;
+    }
 }

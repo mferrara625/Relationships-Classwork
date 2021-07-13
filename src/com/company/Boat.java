@@ -20,6 +20,6 @@ public class Boat extends Vehicle{
         this.passengers.remove(passengers);
     }
     public String toString(){
-        return "Engine: " + this.engine.type + " Type: " + type + " isLand?: " + isLand + " isWater?: " + isWater + " isAir?: " + isAir + " isSpace?: " + isSpace + " passengers: " + passengers + " Max Load: " + maxLoad;
+        return "Engine: " + this.engine.type + " Type: " + type + " isLand?: " + isLand + " isWater?: " + isWater + " isAir?: " + isAir + " isSpace?: " + isSpace + " Passengers: " + passengers + " Max Load: " + maxLoad;
     }
 }
